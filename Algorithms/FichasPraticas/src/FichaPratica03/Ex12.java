@@ -19,15 +19,18 @@ public class Ex12 {
             System.out.print("Digite um número: ");
             userInput = input.nextInt();
 
-            if (userInput <= 25 && userInput > 0)
+            if (userInput > 0)
             {
-                ate25 += 1;
-            } else if (userInput <= 50) {
-                ate50 += 1;
-            } else if (userInput <= 75) {
-                ate75 += 1;
-            } else if (userInput <= 100) {
-                ate100 += 1;
+                if (userInput <= 25)
+                {
+                    ate25 += 1;
+                } else if (userInput <= 50) {
+                    ate50 += 1;
+                } else if (userInput <= 75) {
+                    ate75 += 1;
+                } else if (userInput <= 100) {
+                    ate100 += 1;
+                }
             }
         }
 
