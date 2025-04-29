@@ -15,16 +15,10 @@ public class Ex10 {
         System.out.print("Insira um número: ");
         numero = input.nextInt();
 
-        while (contador <= numero - 2)
+        while (contador <= numero)
         {
-            contador += 2;
             System.out.println(contador);
+            contador += 2;
         }
-
-        if (numero % 2 != 0)
-        {
-            System.out.println(numero);
-        }
-
     }
 }
