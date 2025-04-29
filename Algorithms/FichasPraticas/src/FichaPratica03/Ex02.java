@@ -7,7 +7,7 @@ public class Ex02 {
     public static void main(String[] args) {
         int numero = 0;
 
-        while(numero <= 250) {
+        while(numero <= 400) {
             System.out.println(numero);
             numero += 2;
         }
