@@ -11,7 +11,7 @@ public class Ex10 {
 
         int numero;
         int contador = 0;
-        
+
         System.out.print("Insira um número: ");
         numero = input.nextInt();
 
