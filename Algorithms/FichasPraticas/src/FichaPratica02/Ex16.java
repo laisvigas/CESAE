@@ -72,7 +72,6 @@ public class Ex16 {
         novoValor = novoValor - notasCinco * 5;
 
 
-
         System.out.println("quantidade de notas de 200: " + notasDuzentos);
         System.out.println("quantidade de notas de 100: " + notasCem);
         System.out.println("quantidade de notas de 50: " + notasCinquenta);
@@ -82,8 +81,3 @@ public class Ex16 {
 
     }
 }
-
-// €45:
-// 2 notas de 20
-// 1 nota de 5
-// 3 notas total

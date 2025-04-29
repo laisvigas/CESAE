@@ -45,14 +45,10 @@ public class Ex15 {
 
         switch(opcao) {
             case "C":
-                System.out.println(menorValor);
-                System.out.println(valorDoMeio);
-                System.out.println(maiorValor);
+                System.out.println(menorValor + " " + valorDoMeio + " " + maiorValor);
                 break;
             case "D":
-                System.out.println(maiorValor);
-                System.out.println(valorDoMeio);
-                System.out.println(menorValor);
+                System.out.println(maiorValor + " " + valorDoMeio + " " + menorValor);
                 break;
             default:
                 System.out.println("Operação inválida");
