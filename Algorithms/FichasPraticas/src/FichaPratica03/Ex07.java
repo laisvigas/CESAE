@@ -16,8 +16,9 @@ public class Ex07 {
         while(contador <= 100)
         {
             System.out.println(contador);
-            contador += 1;
             somatorio += contador;
+            contador += 1;
+
         }
         System.out.println("Somatório: " + somatorio);
     }
