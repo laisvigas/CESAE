@@ -19,7 +19,7 @@ public class Ex09 {
         {
             System.out.print("Insira um número: ");
             numero = input.nextFloat();
-            
+
             soma += numero;
             contador += 1;
 
