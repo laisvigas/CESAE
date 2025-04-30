@@ -10,8 +10,8 @@ public class Ex09 {
         Scanner input = new Scanner(System.in);
 
         float numero = 0;
-        float soma = 0;
-        float contador = 0;
+        float soma = 1;
+        float contador = -1;
         float media;
 
 
@@ -19,12 +19,10 @@ public class Ex09 {
         {
             System.out.print("Insira um número: ");
             numero = input.nextFloat();
+            
+            soma += numero;
+            contador += 1;
 
-            if (numero != -1)
-            {
-                soma += numero;
-                contador += 1;
-            }
         }
         media = soma / contador;
         System.out.print("Média: " + media);
