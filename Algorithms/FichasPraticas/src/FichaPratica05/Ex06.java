@@ -10,8 +10,7 @@ public class Ex06 {
         Scanner input = new Scanner(System.in);
 
         int[] vetor = new int[10];
-        int maiorNumero = 0;
-        boolean naoEstaCrescente = false;
+        boolean crescente = true;
 
         // ler vetor
         for(int i = 0; i < vetor.length; i++) {
@@ -19,21 +18,16 @@ public class Ex06 {
             vetor[i] = input.nextInt();
         }
 
-
-        maiorNumero = vetor[0];
-
-        for(int i = 0; i < vetor.length; i++) {
-            if (vetor[i] >= maiorNumero) {
-                maiorNumero = vetor[i];
-            } else {
-                naoEstaCrescente = true;
+        for(int i = 1; i < vetor.length; i++) {
+            if (vetor[i] <= vetor[i - 1]) {
+                crescente = false;
             }
         }
 
-        if (naoEstaCrescente){
-            System.out.println("O array não está em ordem crescente");
+        if (crescente){
+            System.out.println("Crescente");
         } else {
-            System.out.println("O array está em ordem crescente");
+            System.out.println("Não é crescente");
         }
     }
 }

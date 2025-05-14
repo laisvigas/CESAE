@@ -18,11 +18,17 @@ public class Ex07 {
             vetor[i] = input.nextInt();
         }
 
-        maiorNumero = vetor[0];
+        maiorNumero = -1;
 
         for(int i = 0; i < vetor.length; i++) {
-            if (vetor[i] % 2 == 0 && vetor[i] >= maiorNumero) {
-                maiorNumero = vetor[i];
+            if (vetor[i] % 2 == 0 ) {
+                if (maiorNumero % 2 != 0) {
+                    maiorNumero = vetor[i];
+                }
+
+                if (vetor[i] > maiorNumero) {
+                    maiorNumero = vetor[i];
+                }
             }
         }
 

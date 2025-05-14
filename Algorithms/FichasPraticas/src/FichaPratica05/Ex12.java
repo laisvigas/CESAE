@@ -26,18 +26,30 @@ public class Ex12 {
             vetor2[i] = input.nextInt();
         }
 
-        // transformar vetores em matriz
-        for(int linha = 0; linha < matriz.length; linha++) {
-            for(int coluna = 0; coluna < matriz[0].length; coluna++) {
-                matriz[linha][coluna] = vetor1[linha];
-            }
+        // colocar vetores em matriz
+//        for(int linha = 0; linha < matriz.length; linha++) {
+//            for(int coluna = 0; coluna < matriz[0].length; coluna++) {
+//                matriz[linha][coluna] = vetor1[linha];
+//            }
+//        }
+//
+//        for(int linha = 0; linha < matriz.length; linha++) {
+//            for(int coluna = 1; coluna < matriz[0].length; coluna++) {
+//                matriz[linha][coluna] = vetor2[linha];
+//            }
+//        }
+
+        // colocar vetores em matriz
+        for(int i = 0; i < vetor1.length; i++) {
+            matriz[i][0]=vetor1[i];
+            matriz[i][1]=vetor2[i];
         }
 
 
         // imprimir matriz
         for(int linha = 0; linha < matriz.length; linha++) {
             for (int coluna = 0; coluna < matriz[0].length; coluna++) {
-                System.out.print(matriz[linha][coluna]);
+                System.out.print(matriz[linha][coluna] + "  |  ");
             }
             System.out.println(" ");
         }
