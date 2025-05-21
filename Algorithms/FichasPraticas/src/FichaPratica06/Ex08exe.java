@@ -1,5 +1,4 @@
 package FichaPratica06;
-
 import java.util.Scanner;
 
 import static FichaPratica06.Ex08.somarMatrizes;
