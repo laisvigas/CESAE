@@ -35,7 +35,7 @@ public class ContaBancaria {
         }
     }
 
-    public void exibirDetalhes(){
-        System.out.println("Titular: "+this.titular + " - IBAN: "+this.IBAN+" - Saldo: "+this.saldo+" €");
+    public void exibirDetalhes() {
+        System.out.println("Titular: " + this.titular + " - IBAN: "+this.IBAN + " - Saldo: " + this.saldo+" €");
     }
 }
