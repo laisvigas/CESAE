@@ -52,11 +52,9 @@ public class ContaBancaria {
         if (this.valorDivida > 0) {
             System.out.print("HÁ DÍVIDAS A PAGAR");
             return false;
-        } else {
-            if (valorAPedir > valorMaximoASerEmprestado ) {
-                System.out.print("VALOR MUITO ALTO");
-                return false;
-            }
+        } else if (valorAPedir > valorMaximoASerEmprestado ) {
+            System.out.print("VALOR MUITO ALTO");
+            return false;
         }
         System.out.println("EMPRESTIMO CONCEDIDO");
         this.saldo += valorAPedir;
