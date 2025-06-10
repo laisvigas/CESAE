@@ -64,3 +64,12 @@ switch (weekDay) {
     default:
         alert("Ops, esse dia não existe.")
 }
+
+
+let password = prompt("Qual a sua senha?");
+
+if (password.length < 6) {
+    console.log("A senha deve ter pelo menos 6 caracteres;")
+} else {
+    console.log("Senha aceita!")
+}
