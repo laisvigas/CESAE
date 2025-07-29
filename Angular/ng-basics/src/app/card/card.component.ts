@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-
+  firstName : string = 'Laís';
+  lastName: string = 'Vigas';
 }
